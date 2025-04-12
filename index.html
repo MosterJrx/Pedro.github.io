@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Cumple Mari</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="pantalla pantalla1 activa">
+    <img src="imagenes/ke.jpg" alt="Bienvenida">
+    <input type="text" id="nombre" placeholder="Identificate mmg">
+    <button onclick="verificarNombre()">Entrar</button>
+  </div>
+
+  <div class="pantalla pantalla2">
+    <img src="imagenes/ka.jpg" alt="Sorpresa">
+    <p id="mensaje1">Muchisimas felicidades mari, de vdd q te aprecio mucho, es q muy bonito tenerte de amiga, ojala y cumplas muchisimos años mas. Eres una persona increible, caes super bien, y tienes un montón de cosas positivas, <br> como por ejemplo:<br>
+     y tambien:<br>
+     y no olvidar<br>
+     y por supuerto que </p>
+    <button onclick="continuarAPantalla3()">Continuar</button>
+  </div>
+
+  <div class="pantalla pantalla3">
+    <div class="rotador-texto" id="textoImagen">MariAdultaNoColor</div>
+    <div class="rotador-img">
+      <button onclick="anteriorImagen()">⟵</button>
+      <img id="imgRotador" src="imagenes/bn.jpg" alt="Dibujo">
+      <button onclick="siguienteImagen()">⟶</button>
+    </div>
+
+    <div class="controles-musica">
+      <button onclick="cancionAnterior()">⏮</button>
+      <button onclick="toggleAudio()">✋</button>
+      <button onclick="cancionSiguiente()">⏭</button>
+      <div class="nombre-cancion" id="nombreCancion"></div>
+    </div>
+  </div>
+
+  <audio id="audio"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
